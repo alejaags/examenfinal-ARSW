@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperatura</title>
+</head>
+<body>
+
+    <select id="selectMed" oninput="setTable()">
+        <option value="celsius">celsius</option>
+        <option value="fahrenheit">fahrenheit</option>
+    </select>
+    <br></br>
+    <input id="val" type="text" size="15" maxlength="30" value="Valor" name="valor">
+    <br></br>
+    <button class="button" onclick="indBackEnd.calcularValor()">Calcular</button>
+    <br></br>
+    <p id="resp"></p>
+
+
+
+    <script src="./index_files/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./index_files/popper.min.js"></script>
+    <script src="/js/indBackEnd.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+
+</body>
+</html>
